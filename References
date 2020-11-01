@@ -1,0 +1,47 @@
+
+GitHub General
+https://github.com/JeffLIrion/udacity
+
+
+Lesson 2 quizz 19 _ GaussianNB Deployment on Terrain Data 
+  https://stackoverflow.com/questions/32961571/python-examples-on-udacity-broken
+
+**How to make mini quizzes on mac**
+#Python 2 is needed, as well as an old version, not any longer supported of scikit-learn
+#Create a new conda environment in python 2.7 
+#command in anaconda prompt
+conda create --name <envname> python=2.7
+
+pip install scikit-learn
+
+pip install nltk
+
+#"downgrade" sckit-learn with command
+conda install -c free scikit-learn=0.18.0
+
+#to work on py queries
+conda activate <envname>
+spyder
+
+**sklearn documentation**
+https://scikit-learn.org/stable/modules/classes.html
+
+**LESSON 3 :SVM kernels (noyaux) et paramères C et gamma**
+http://www.math.univ-toulouse.fr/~agarivie/Telecom/PESTO/TP_SVM_Pesto.pdf
+
+**LESSON 4 : Decision trees - notes and code for Udacity
+https://www.programmersought.com/article/42734865050/
+
+ENRON PROJECT
+POI : https://www.nytimes.com/2006/01/29/business/businessspecial3/10-enron-players-where-they-landed-after-the-fall.html
+file:///Users/mperaud/Downloads/EnronDirectory-Part2_ER_1211.pdf
+
+
+**Sources stackoverflow et github sur ce cours et ses pb**
+https://stackoverflow.com/questions/53978901/importerror-cannot-import-name-cross-validation-from-sklearn 
+https://github.com/udacity/ud120-projects/issues/46
+
+**Whole Machine learning module in python 3 !
+https://github.com/flyinactor91/ud120-projects
+Datacamp :
+https://www.datacamp.com/community/tutorials/decision-tree-classification-python?utm_source=adwords_ppc&utm_campaignid=898687156&utm_adgroupid=48947256715&utm_device=c&utm_keyword=&utm_matchtype=b&utm_network=g&utm_adpostion=&utm_creative=332602034352&utm_targetid=aud-299261629574:dsa-429603003980&utm_loc_interest_ms=&utm_loc_physical_ms=9055221&gclid=Cj0KCQjwhvf6BRCkARIsAGl1GGi4MRWv7J-Nhd-33MQu2p_ab80b22AVEvr0ZtbgNtThl9hXzPvTAPsaAiJREALw_wcB
