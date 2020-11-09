@@ -32,10 +32,16 @@ http://www.math.univ-toulouse.fr/~agarivie/Telecom/PESTO/TP_SVM_Pesto.pdf
 **LESSON 4 : Decision trees - notes and code for Udacity
 https://www.programmersought.com/article/42734865050/
 
+
 ENRON PROJECT
 POI : https://www.nytimes.com/2006/01/29/business/businessspecial3/10-enron-players-where-they-landed-after-the-fall.html
 file:///Users/mperaud/Downloads/EnronDirectory-Part2_ER_1211.pdf
 
+**about graphical view of decision trees :
+https://mljar.com/blog/visualize-decision-tree/
+
+**combining gridsearchcv, SelektKBest and feature_scaling :
+https://www.tomasbeuzen.com/post/scikit-learn-gridsearch-pipelines/
 
 **Sources stackoverflow et github sur ce cours et ses pb**
 https://stackoverflow.com/questions/53978901/importerror-cannot-import-name-cross-validation-from-sklearn 
