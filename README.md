@@ -7,7 +7,7 @@ poi_id.py generates three pkl files :
 - my_dataset
 - my_features_list.pkl
 
-20201101_Enron_analysis.py contains whole code and graphic output supporting project submission ;
+20201110_Enron_analysis.py contains whole code and graphic output supporting project submission ;
 It works with python 3 and latest version of scikit: sklearn 0.24. 
 
 References contains all references used and supporting solutions to problems encountered
