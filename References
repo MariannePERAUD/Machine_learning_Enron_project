@@ -40,8 +40,14 @@ file:///Users/mperaud/Downloads/EnronDirectory-Part2_ER_1211.pdf
 **about graphical view of decision trees :
 https://mljar.com/blog/visualize-decision-tree/
 
+**handling missing values
+https://github.com/ResidentMario/missingno
+
 **combining gridsearchcv, SelektKBest and feature_scaling :
 https://www.tomasbeuzen.com/post/scikit-learn-gridsearch-pipelines/
+
+**https://www.dataschool.io/comparing-supervised-learning-algorithms/
+Comparing supervised learning algorithms
 
 **Sources stackoverflow et github sur ce cours et ses pb**
 https://stackoverflow.com/questions/53978901/importerror-cannot-import-name-cross-validation-from-sklearn 
