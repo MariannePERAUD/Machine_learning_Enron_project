@@ -7,6 +7,11 @@ sys.path.append("../tools/")
 
 from feature_format import featureFormat, targetFeatureSplit
 from tester import dump_classifier_and_data
+from sklearn.pipeline import Pipeline
+from sklearn.pipeline import make_pipeline
+from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.tree import DecisionTreeClassifier
 
 ### Task 1: Select what features you'll use.
 ### features_list is a list of strings, each of which is a feature name.
@@ -61,7 +66,7 @@ data_dict.pop('LAVORATO JOHN J',None)
 
 ### Task 3: Create new feature(s)
 ### create new features
-### new features are: fraction_to_poi_email,fraction_from_poi_email
+### new features are: fraction_to_poi_email,fraction_from_poi_email and bonus/salary
 
 def dict_to_list(key,normalizer):
     new_list=[]
@@ -75,18 +80,21 @@ def dict_to_list(key,normalizer):
 
 
 ### create two lists of new features
-part_to_poi=dict_to_list("from_poi_to_this_person","to_messages")
+part_to_POI=dict_to_list("from_poi_to_this_person","to_messages")
 ratio_bonus_salary=dict_to_list("bonus","salary")
+part_from_poi=dict_to_list('from_poi_to_this_person','from_messages')
 
 ### insert new features into data_dict
 count=0
 for i in data_dict:
-    data_dict[i]["part_to_poi"]=part_to_poi[count]
+    data_dict[i]["part_to_POI"]=part_to_POI[count]
     data_dict[i]["ratio_bonus_salary"]= ratio_bonus_salary[count]
+    data_dict[i]["part_from_POI"]= part_from_poi[count]
 
 ### Store to my_dataset for easy export below.
 my_dataset = data_dict
-features_list=['poi','bonus','exercised_stock_options','part_to_poi','ratio_bonus_salary']
+features_list=['poi','part_from_POI','part_to_POI','ratio_bonus_salary','director_fees','from_messages','from_poi_to_this_person',
+                 ]
 ### Extract features and labels from dataset for local testing
 data = featureFormat(my_dataset, features_list, sort_keys = True)
 labels, features = targetFeatureSplit(data)
@@ -98,8 +106,7 @@ labels, features = targetFeatureSplit(data)
 ### http://scikit-learn.org/stable/modules/pipeline.html
 
 # Provided to give you a starting point. Try a variety of classifiers (see in python 3 version and word doc)
-from sklearn.neighbors import KNeighborsClassifier
-clf =KNeighborsClassifier(leaf_size=2,metric='euclidean',n_neighbors=1,weights='uniform')
+clf=make_pipeline(MinMaxScaler(),DecisionTreeClassifier())
 
 ### Task 5: Tune your classifier to achieve better than .3 precision and recall 
 ### using our testing script. Check the tester.py script in the final project

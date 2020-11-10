@@ -1,0 +1,16 @@
+(lp0
+S'poi'
+p1
+aS'part_from_POI'
+p2
+aS'part_to_POI'
+p3
+aS'ratio_bonus_salary'
+p4
+aS'director_fees'
+p5
+aS'from_messages'
+p6
+aS'from_poi_to_this_person'
+p7
+a.
